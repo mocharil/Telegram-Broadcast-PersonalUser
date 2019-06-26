@@ -99,7 +99,7 @@ client = TelegramClient(name, api_id, api_hash)
 client.start(phone)
 import json
 sp.call('cls',shell=True)
-print('=======================LOGIN BERHASIL=====================================')
+print('=======================LOGIN SUCCESS=====================================')
 
 message=''
 
@@ -151,7 +151,7 @@ def kirim():
             pass
 
 if os.path.isfile(path_name+'\\posting_{}.json'.format(name))==False:
-    print('update pesan anda di akun bot telegram @broadcast_telegram_bot')
+    print('update pesan anda di akun bot telegram')
     with open(path_name+'\\posting_{}.json'.format(name),'w') as f:
         json.dump({'message':message,'time':'60','username':name},f)
 
