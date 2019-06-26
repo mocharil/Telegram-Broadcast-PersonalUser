@@ -112,7 +112,7 @@ def run_continuously(schedule, interval=1):
     
 def main():
 
-    TOKEN=TOKEN 
+    TOKEN="your token telegram bot"
     
     updater = Updater(TOKEN)
 
